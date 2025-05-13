@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+/* app.css */
+
+/* Layout */
+.container {
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem; /* Equivalent to mt-10 */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Form */
+.form-input, .form-textarea {
+  border: 1px solid #d1d5db; /* equivalent to border in tailwind */
+  padding: 0.5rem; /* equivalent to p-2 in tailwind */
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-input {
+  margin-bottom: 1rem; /* spacing between inputs */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.form-textarea {
+  margin-bottom: 1.5rem; /* spacing between textarea and button */
+}
+
+/* Segment Rules Section */
+.segment-rules {
+  padding: 1rem;
+  border: 1px solid #d1d5db;
+}
+
+.segment-rules h3 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.segment-rules input {
+  margin-bottom: 1rem;
+}
+
+.segment-rules input:last-child {
+  margin-bottom: 0;
+}
+
+/* Buttons */
+.btn-green {
+  background-color: #16a34a; /* Equivalent to bg-green-600 */
   color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem; /* Equivalent to rounded in tailwind */
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-green:hover {
+  background-color: #15803d; /* Darker green for hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* AI Message Button */
+.btn-ai-message {
+  font-size: 0.875rem; /* Equivalent to text-sm */
+  color: #2563eb; /* Equivalent to text-blue-600 */
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn-ai-message:disabled {
+  color: #9ca3af; /* Disabled color */
+  cursor: not-allowed;
 }
