@@ -1,10 +1,11 @@
 Installation
 Navigate to the frontend folder:
 
+
 bash
 Copy
 Edit
-cd xeno-crm/frontend
+cd xeno/frontend
 Install dependencies:
 
 bash
